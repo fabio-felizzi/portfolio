@@ -1,0 +1,33 @@
+#logo {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -20px;
+	left: -5px;
+}
+
+h1 {
+	margin-bottom: 50px;
+}
+
+#welcome {
+	background-image: url("../images/background.jpg");
+	width: 100%;
+	background-size: cover;
+	color: white;
+}
+
+#about {
+	background: linear-gradient(#151F20, white );
+	width: 100%;
+	background-size: cover;
+	color: white;
+}
+
+li {
+	border-bottom: 1px solid grey;
+}
+
+.sidebar-nav {
+	padding: 0 5px 0 5px;
+}
