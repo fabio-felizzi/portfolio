@@ -12,10 +12,11 @@
     <title>Fabio's Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/reset.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,45 +29,59 @@
 </head>
 
 <body>
-
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li><img id="logo" src="images/logo.png" alt="fabio-felizzi.com logo"></li>
-                <li class="sidebar-brand"><a href="#welcome" id="home">Home</a></li>
-                <li><a href="#about" id="aboutMe">About Me</a></li>
-                <li><a href="blog/index.php" target="_blank">The Neurotic Developer's Blog</a></li>
-                <li><a href="#bbc" id="bbcLink">BBC News Clone CSS Project</a></li>
-                <li><a href="#reactionGame" id="reaction">Javascript Reaction Game</a></li>
-                <li><a href="#formValidator" id="validator">jQuery Form Validator</a></li>
-                <li><a href="#codePlayer" id="player">HTML/CSS/JS CodePlayer</a></li>
-                <li><a href="#bootstrapLanding" id="bootstrapLand">Bootstrap Landing Page</a></li>
-                <li><a href="#weatherApp" id="weather">PHP Weather App</a></li>
-                <li><a href="#diaryApp" id="diary">Secret Diary MySQL App</a></li>
-                <li><a href="#postcodeApp" id="postcode">Google API Postcode Finder</a></li>
-                <li><a href="#contactForm" id="contact">Contact Me</a></li>
-            </ul>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- <a href="#" class="navbar-brand"><img id="logo" src="images/logo.png" alt="fabio-felizzi.com logo"></a> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <!-- /#sidebar-wrapper -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+                <li></li>
+                <li><a href="#welcome" class="scrollTo">Home</a></li>
+                <li><a href="#about" class="scrollTo">About Me</a></li>
+                <li><a href="blog/index.php" target="_blank">The Neurotic Developer's Blog</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                        Work <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#bbc" class="scrollTo">BBC News Clone CSS Project</a></li>
+                        <li><a href="#reactionGame" class="scrollTo">Javascript Reaction Game</a></li>
+                        <li><a href="#formValidator" class="scrollTo">jQuery Form Validator</a></li>
+                        <li><a href="#codePlayer" class="scrollTo">HTML/CSS/JS CodePlayer</a></li>
+                        <li><a href="#bootstrapLanding" class="scrollTo">Bootstrap Landing Page</a></li>
+                        <li><a href="#weatherApp" class="scrollTo">PHP Weather App</a></li>
+                        <li><a href="#diaryApp" class="scrollTo">Secret Diary MySQL App</a></li>
+                        <li><a href="#postcodeApp" class="scrollTo">Google API Postcode Finder</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contactForm" class="scrollTo">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
 
         <!-- Page Content -->
         <div class="page-content-wrapper" id="welcome">
-            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-6">
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                         <h1>Welcome!</h1>
                         <p>Hello, welcome to my portfolio site. Below you can see a collection of my work so far, If you have any questions, please feel free to use the contact form, which conveniently, is one of my projects!</p>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="page-content-wrapper" id="about">
-            <div class="container-fluid">
+
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-6">
                         <h1>About Me</h1>
                         <p>
                             As you have probably gathered by now, my name is Fabio. I'm 31 years old and I have been an aspiring front end web developer for the last 2 years. My main interests lie in HTML/CSS and Javascript and I've been having alot of fun learning about how powerful these tools can be.
@@ -81,7 +96,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="page-content-wrapper" id="bbc">
             <div class="container-fluid">
@@ -173,7 +187,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Contact Me</h1>
+                        <h1>Contact Mes</h1>
                         <?php
                         include ('php/index.php');
                         ?>

@@ -1,9 +1,24 @@
+body {
+	background : #151F20;
+}
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
 #logo {
 	width: 200px;
 	height: 200px;
 	position: relative;
 	top: -20px;
 	left: -5px;
+}
+
+.row {
+
+margin-right: 0;
+
+margin-left: 0;
+
 }
 
 h1 {
@@ -13,21 +28,15 @@ h1 {
 #welcome {
 	background-image: url("../images/background.jpg");
 	width: 100%;
-	background-size: cover;
+	background-size: contain;
+	background-repeat:   no-repeat;
 	color: white;
 }
 
 #about {
 	background: linear-gradient(#151F20, white );
 	width: 100%;
-	background-size: cover;
+	background-size: contain;
+	background-repeat:   no-repeat;
 	color: white;
-}
-
-li {
-	border-bottom: 1px solid grey;
-}
-
-.sidebar-nav {
-	padding: 0 5px 0 5px;
 }
